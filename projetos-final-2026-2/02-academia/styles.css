@@ -7,12 +7,12 @@
 
 /* Variáveis (Custom Properties) — facilitam manter o tema */
 :root {
-  --primary: #111827;
-  --accent: #facc15;
+  --primary: #20386b;
+  --accent: #864937;
   --bg: #0b0d12;
-  --text: #1f2937;
+  --text: #b0b8c2;
   --muted: #6b7280;
-  --card: #ffffff;
+  --card: #0e6b0e98;
   --radius: 14px;
   --shadow: 0 10px 30px rgba(0,0,0,.08);
   --container: 1100px;
@@ -66,12 +66,16 @@ header.site-header {
   display: none;
   background: transparent;
   border: 0;
-  color: #fff;
+  color: #ffffff;
   font-size: 1.6rem;
   cursor: pointer;
 }
 
 /* ---------- HERO ---------- */
+
+
+
+
 .hero {
   background: linear-gradient(135deg, var(--primary), var(--accent));
   color: #fff;
