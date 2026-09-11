@@ -7,12 +7,12 @@
 
 /* Variáveis (Custom Properties) — facilitam manter o tema */
 :root {
-  --primary: #20386b;
+  --primary: #02020150;
   --accent: #864937;
-  --bg: #0b0d12;
-  --text: #b0b8c2;
-  --muted: #6b7280;
-  --card: #0e6b0e98;
+  --bg: #2f4375;
+  --text: #ffffff;
+  --muted: #fdfdff;
+  --card: #0c080702;
   --radius: 14px;
   --shadow: 0 10px 30px rgba(0,0,0,.08);
   --container: 1100px;
@@ -42,7 +42,7 @@ img { max-width: 100%; display: block; }
 /* ---------- HEADER / NAV ---------- */
 header.site-header {
   background: var(--primary);
-  color: #fff;
+  color: #f89602;
   position: sticky; /* fixa ao rolar */
   top: 0;
   z-index: 50;
@@ -66,7 +66,7 @@ header.site-header {
   display: none;
   background: transparent;
   border: 0;
-  color: #ffffff;
+  color: #f3f3f3;
   font-size: 1.6rem;
   cursor: pointer;
 }
@@ -74,11 +74,68 @@ header.site-header {
 /* ---------- HERO ---------- */
 
 
+.hero-inicio {
+  background-image: radial-gradient(circle, rgba(17,17,17,0) 40%, rgba(17,17,17,1) 95%),
+   url('img/fundo_inicio.png');
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+ padding: 8%;
+}
+
+.modalidades{
+  background-image: radial-gradient(circle, rgba(17,17,17,0) 40%, rgba(17,17,17,1) 95%),
+   url('img/fundo_moda.avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.modalidades .card{
+  background-color: #060311b6;
+}
+
+.modalidades .grid article.card-destaque h3 {
+ color: #ec9108;
+}
+
+
+
+.hero-inicio .btn{
+ background-color: #db7f06e8;
+ color: #0b0d12;
+}
+
+.conteudo-hero{
+  max-width: 500px;
+  text-align: left;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.hero-inicio h1{
+  font-family: 'Poppins', 'Segoe UI', "Bebas Neue", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #ff9a03;
+  text-transform: uppercase;
+}
 
 .hero {
   background: linear-gradient(135deg, var(--primary), var(--accent));
-  color: #fff;
+  color: #faf6f6;
   padding: 80px 20px;
   text-align: center;
 }
@@ -99,7 +156,7 @@ header.site-header {
   transition: transform .15s ease, box-shadow .15s ease;
 }
 .btn:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
-.btn.primary { background: var(--primary); color: #fff; }
+.btn.primary { background: var(--primary); color: #faf6f6; }
 
 /* ---------- SEÇÕES ---------- */
 section { padding: 70px 0; }
