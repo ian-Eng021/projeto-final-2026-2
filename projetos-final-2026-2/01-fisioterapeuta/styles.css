@@ -72,7 +72,13 @@ header.site-header {
 }
 
 /* ---------- HERO ---------- */
-.hero {
+
+.hero-box{
+  position: relative;
+}
+
+
+.hero{
   background: linear-gradient(135deg, var(--primary), var(--accent));
   color: #fff;
   padding: 80px 20px;
